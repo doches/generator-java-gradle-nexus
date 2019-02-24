@@ -1,0 +1,31 @@
+{
+  "name": "generator-java-gradle-nexus",
+  "version": "0.0.1",
+  "description": "Scaffolds out a Java library build with Gradle and published to a private Nexus instance",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/doches/generator-java-gradle-nexus"
+  },
+  "bugs": "https://github.com/doches/generator-java-gradle-nexus/issues",
+  "homepage": "https://github.com/doches/generator-java-gradle-nexus",
+  "author": {
+    "name": "Trevor Fountain",
+    "email": "trevor@texasexpat.net",
+    "url": "http://texasexpat.net"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "gradle",
+    "java",
+    "nexus"
+  ],
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "yeoman-generator": "^0.20.3",
+    "yosay": "^1.2.0"
+  }
+}

@@ -1,0 +1,15 @@
+plugins {
+  id 'nebula.maven-publish' version '4.9.1'
+  id 'nebula.javadoc-jar' version '4.9.1'
+  id 'nebula.source-jar' version '4.9.1'
+  id 'maven'
+  id 'idea'
+  id 'com.palantir.git-version' version '0.11.0'
+}
+
+allprojects {
+  group '<%= package %>'
+  version gitVersion()
+
+  apply from: "${rootDir}/gradle/repositories.gradle"
+}

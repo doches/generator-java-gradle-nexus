@@ -1,0 +1,6 @@
+repositories {
+  maven  {
+    url "${nexusUrl}/repository/maven-public/"
+  }
+  mavenCentral()
+}

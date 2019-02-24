@@ -1,0 +1,18 @@
+apply plugin: 'nebula.maven-publish'
+apply plugin: 'nebula.javadoc-jar'
+apply plugin: 'nebula.source-jar'
+apply plugin: 'nebula.info'
+apply plugin: 'maven'
+
+uploadArchives {
+  repositories {
+    mavenDeployer {
+      repository(url: "${nexusUrl}/repository/maven-releases/") {
+        authentication(userName: nexusUsername, password: nexusPassword)
+      }
+      snapshotRepository(url: "${nexusUrl}/repository/maven-snapshots") {
+        authentication(userName: nexusUsername, password: nexusPassword)
+      }
+    }
+  }
+}
