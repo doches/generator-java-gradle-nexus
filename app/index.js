@@ -110,12 +110,12 @@ module.exports = yeoman.generators.Base.extend({
                     if (project[1][f].indexOf("BINARY-") > -1) {
                         project[1][f] = project[1][f].replace("BINARY-", "");
                         this.fs.copy(
-                            this.templatePath("projects/" + project[0] + "/" + project[1][f]),
+                            this.templatePath(project[0] + "/" + project[1][f]),
                             this.destinationPath(this.props.slug + "/" + project[1][f])
                         );
                     } else {
                         this.fs.copyTpl(
-                            this.templatePath("projects/" + project[0] + "/" + project[1][f]),
+                            this.templatePath(project[0] + "/" + project[1][f]),
                             this.destinationPath(this.props.slug + "/" + project[1][f]),
                             this.props
                         );
@@ -129,7 +129,7 @@ module.exports = yeoman.generators.Base.extend({
             ];
             for (var i = 0; i < files.length; i++) {
                 this.fs.copyTpl(
-                    this.templatePath("projects/java/" + files[i]),
+                    this.templatePath("project/java/" + files[i]),
                     this.destinationPath(this.props.slug + "/src/main/java/" + packageDir + "/" + files[i]),
                     this.props
                 );

@@ -1,6 +1,6 @@
 {
   "name": "generator-java-gradle-nexus",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Scaffolds out a Java library build with Gradle and published to a private Nexus instance",
   "main": "index.js",
   "repository": {
